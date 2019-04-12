@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bb5c1af211ba436d318540977e6eaad",
+    "content-hash": "9efa7809db9680f9d5fb0ea3464cade3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2656,6 +2656,17 @@
                 "source": "http://cgit.drupalcode.org/openid_connect",
                 "issues": "https://www.drupal.org/project/issues/openid_connect"
             }
+        },
+        {
+            "name": "drupal/openid_connect_harid",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sisuloome/openid_connect_harid.git",
+                "reference": "master"
+            },
+            "type": "drupal-module-custom",
+            "time": "2019-04-09T08:56:31+00:00"
         },
         {
             "name": "drush/drush",
@@ -8234,7 +8245,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/openid_connect": 10
+        "drupal/openid_connect": 10,
+        "drupal/openid_connect_harid": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

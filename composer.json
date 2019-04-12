@@ -13,6 +13,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type" : "package",
+            "package": {
+                "name" : "drupal/openid_connect_harid",
+                "version": "dev-master",
+                "type": "drupal-module-custom",
+                "source": {
+                    "url" : "https://github.com/sisuloome/openid_connect_harid.git",
+                    "type": "git",
+                    "reference" : "master"
+                }
+            }
         }
     ],
     "require": {
@@ -23,6 +36,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/openid_connect": "^1.0@beta",
+        "drupal/openid_connect_harid": "dev-master",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -69,6 +83,7 @@
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:drupal-module-custom"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
