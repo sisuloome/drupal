@@ -22,7 +22,9 @@
   ```
   drush en h5peditor
   drush en openid_connect_harid
-
+  drush then bootstrap
+  drush config-set system.theme default bootstrap
+  drush cr
   ```
 * Configure the system as needed
 
