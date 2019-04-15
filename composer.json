@@ -35,6 +35,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
+        "drupal/h5p": "^1.0@RC",
         "drupal/openid_connect": "^1.0@beta",
         "drupal/openid_connect_harid": "dev-master",
         "drush/drush": "^9.0.0",
