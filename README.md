@@ -4,8 +4,8 @@
 
 * Make sure that server meets the
   [requirements](https://www.drupal.org/docs/8/system-requirements) + make sure
-  that `composer` is installed in the system (both global and local installations
-  should work just fine)
+  that `composer` is installed in the system (both global and local
+  installations should work just fine)
 * Clone the repository and run `composer install` (or `php composer.phar
   install` in case of non-global installation)
 * Only the `web/` catalog should be exposed to the `Apache` web server
@@ -27,6 +27,40 @@
   drush cr
   ```
 * Configure the system as needed
+
+## Updating
+
+### Development
+
+Please follow
+[this](https://www.drupal.org/docs/8/update/update-core-via-composer) guide to
+apply updates locally. Please make sure to remember that
+`drupal-composer/drupal-project` is being used and some of the commands are
+specific to that kind of installation. Commit the changes as you are finished.
+
+### Production
+
+Run `git pull` to get the latest code and apply the updates, use the same
+[guide](https://www.drupal.org/docs/8/update/update-core-via-composer), though
+it should only require to run the `composer install` to update the code. Below
+is a line-by-line guide:
+
+* Make sure to create a backup of both the database and files
+  - `drush sql-dump` should help with the database part and the rest could be
+  done with something like `zip -r backup.zip <DRUPAL-BASE-DIR>`
+* Activate maintenance mode and clear cache
+  - `drush sset system.maintenance_mode 1`
+  - `drush cr`
+* Run `composer install` to update the code
+* Apply database updates and clear the cache again
+  - `drush updatedb`
+  - `drush cr`
+* Deactivate maintenance mode and clear caches
+  - `drush sset system.maintenance_mode 0`
+  - `drush cr`
+
+**NB! Please sure to check if your instance is working as expected after
+applying database updates and finishing the process!**
 
 ## Development
 
