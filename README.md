@@ -22,6 +22,7 @@
   ```
   drush en h5peditor
   drush en openid_connect_harid
+  drush en google_analytics
   drush then bootstrap
   drush config-set system.theme default bootstrap
   drush cr
