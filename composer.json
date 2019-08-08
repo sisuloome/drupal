@@ -97,6 +97,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/h5p": {
+                "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff"
+            }
         }
     }
 }
