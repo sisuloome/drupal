@@ -23,6 +23,7 @@
   drush en h5peditor
   drush en openid_connect_harid
   drush en google_analytics
+  drush en h5p_google_analytics
   drush en bootstrap_site_alert
   drush then bootstrap
   drush config-set system.theme default bootstrap

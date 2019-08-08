@@ -26,6 +26,19 @@
                     "reference" : "master"
                 }
             }
+        },
+        {
+            "type" : "package",
+            "package": {
+                "name" : "drupal/h5p_google_analytics",
+                "version": "dev-master",
+                "type": "drupal-module-custom",
+                "source": {
+                    "url" : "https://github.com/sisuloome/h5p_google_analytics.git",
+                    "type": "git",
+                    "reference" : "master"
+                }
+            }
         }
     ],
     "require": {
@@ -39,6 +52,7 @@
         "drupal/core": "^8.6.0",
         "drupal/google_analytics": "^3.0",
         "drupal/h5p": "^1.0@RC",
+        "drupal/h5p_google_analytics": "dev-master",
         "drupal/openid_connect": "^1.0@beta",
         "drupal/openid_connect_harid": "dev-master",
         "drush/drush": "^9.0.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe89c95de5cd8ae2969c38758db8a52b",
+    "content-hash": "f74decd9bc6092c7e0b43340646a68b6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2794,6 +2794,9 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2827,6 +2830,17 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/h5p"
             }
+        },
+        {
+            "name": "drupal/h5p_google_analytics",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sisuloome/h5p_google_analytics.git",
+                "reference": "master"
+            },
+            "type": "drupal-module-custom",
+            "time": "2019-08-08T10:42:21+00:00"
         },
         {
             "name": "drupal/openid_connect",
@@ -8894,6 +8908,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/h5p": 5,
+        "drupal/h5p_google_analytics": 20,
         "drupal/openid_connect": 10,
         "drupal/openid_connect_harid": 20
     },
