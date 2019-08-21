@@ -39,6 +39,19 @@
                     "reference" : "master"
                 }
             }
+        },
+        {
+            "type" : "package",
+            "package": {
+                "name" : "drupal/h5p_math_input",
+                "version": "dev-master",
+                "type": "drupal-module-custom",
+                "source": {
+                    "url" : "https://github.com/sisuloome/h5p_math_input.git",
+                    "type": "git",
+                    "reference" : "master"
+                }
+            }
         }
     ],
     "require": {
@@ -53,6 +66,7 @@
         "drupal/google_analytics": "^3.0",
         "drupal/h5p": "^1.0@RC",
         "drupal/h5p_google_analytics": "dev-master",
+        "drupal/h5p_math_input": "dev-master",
         "drupal/openid_connect": "^1.0@beta",
         "drupal/openid_connect_harid": "dev-master",
         "drush/drush": "^9.0.0",

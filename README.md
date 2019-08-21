@@ -25,6 +25,7 @@
   drush en google_analytics
   drush en h5p_google_analytics
   drush en bootstrap_site_alert
+  drush en h5p_math_input
   drush then bootstrap
   drush config-set system.theme default bootstrap
   drush cr

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f74decd9bc6092c7e0b43340646a68b6",
+    "content-hash": "7538c2f6c5d8b04147a58f7d419c53fc",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1403,16 +1403,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.1",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
                 "shasum": ""
             },
             "require": {
@@ -1421,12 +1421,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^6.4"
+                "phpunit/phpunit": "^7.5@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -1440,16 +1440,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -1467,7 +1467,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-03-25T19:12:02+00:00"
+            "time": "2019-08-08T18:11:40+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2765,22 +2765,22 @@
         },
         {
             "name": "drupal/h5p",
-            "version": "1.0.0-rc14",
+            "version": "1.0.0-rc16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p.git",
-                "reference": "8.x-1.0-rc14"
+                "reference": "8.x-1.0-rc16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/h5p-8.x-1.0-rc14.zip",
-                "reference": "8.x-1.0-rc14",
-                "shasum": "f402e7fc7321696ae554438ddcbcc1b031a6f179"
+                "url": "https://ftp.drupal.org/files/projects/h5p-8.x-1.0-rc16.zip",
+                "reference": "8.x-1.0-rc16",
+                "shasum": "734eef496c512b324161c5da3903f3890dc7fb67"
             },
             "require": {
                 "drupal/core": "*",
-                "h5p/h5p-core": "1.22.0",
-                "h5p/h5p-editor": "1.22.0"
+                "h5p/h5p-core": "1.23.1",
+                "h5p/h5p-editor": "1.23.1"
             },
             "type": "drupal-module",
             "extra": {
@@ -2788,8 +2788,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc14",
-                    "datestamp": "1552482192",
+                    "version": "8.x-1.0-rc16",
+                    "datestamp": "1565963289",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2841,6 +2841,17 @@
             },
             "type": "drupal-module-custom",
             "time": "2019-08-08T10:42:21+00:00"
+        },
+        {
+            "name": "drupal/h5p_math_input",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sisuloome/h5p_math_input.git",
+                "reference": "master"
+            },
+            "type": "drupal-module-custom",
+            "time": "2019-08-21T13:00:33+00:00"
         },
         {
             "name": "drupal/openid_connect",
@@ -3132,16 +3143,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.10",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec"
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
                 "shasum": ""
             },
             "require": {
@@ -3160,7 +3171,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -3186,7 +3197,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-07-19T20:52:08+00:00"
+            "time": "2019-08-13T17:33:27+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -3472,16 +3483,16 @@
         },
         {
             "name": "h5p/h5p-core",
-            "version": "1.22.0",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h5p/h5p-php-library.git",
-                "reference": "d05bc94d92e225f59f536d0993fc7d65a89e9cae"
+                "reference": "7bc8666f309220a0eb93bca49aaa741bb013b26a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/d05bc94d92e225f59f536d0993fc7d65a89e9cae",
-                "reference": "d05bc94d92e225f59f536d0993fc7d65a89e9cae",
+                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/7bc8666f309220a0eb93bca49aaa741bb013b26a",
+                "reference": "7bc8666f309220a0eb93bca49aaa741bb013b26a",
                 "shasum": ""
             },
             "require": {
@@ -3505,15 +3516,15 @@
             "authors": [
                 {
                     "name": "Svein-Tore Griff With",
+                    "role": "CEO",
                     "email": "with@joubel.com",
-                    "homepage": "http://joubel.com",
-                    "role": "CEO"
+                    "homepage": "http://joubel.com"
                 },
                 {
                     "name": "Frode Petterson",
+                    "role": "Developer",
                     "email": "frode.petterson@joubel.com",
-                    "homepage": "http://joubel.com",
-                    "role": "Developer"
+                    "homepage": "http://joubel.com"
                 }
             ],
             "description": "H5P Core functionality in PHP",
@@ -3525,20 +3536,20 @@
                 "interactive",
                 "quiz"
             ],
-            "time": "2019-03-12T11:47:31+00:00"
+            "time": "2019-08-15T19:15:55+00:00"
         },
         {
             "name": "h5p/h5p-editor",
-            "version": "1.22.0",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h5p/h5p-editor-php-library.git",
-                "reference": "7a8999adf46d4b1ff859ab33818e5a0fa22ca8de"
+                "reference": "7fc23cda93ae4225320f4903017c67e8f4294157"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h5p/h5p-editor-php-library/zipball/7a8999adf46d4b1ff859ab33818e5a0fa22ca8de",
-                "reference": "7a8999adf46d4b1ff859ab33818e5a0fa22ca8de",
+                "url": "https://api.github.com/repos/h5p/h5p-editor-php-library/zipball/7fc23cda93ae4225320f4903017c67e8f4294157",
+                "reference": "7fc23cda93ae4225320f4903017c67e8f4294157",
                 "shasum": ""
             },
             "require": {
@@ -3561,15 +3572,15 @@
             "authors": [
                 {
                     "name": "Svein-Tore Griff With",
+                    "role": "CEO",
                     "email": "with@joubel.com",
-                    "homepage": "http://joubel.com",
-                    "role": "CEO"
+                    "homepage": "http://joubel.com"
                 },
                 {
                     "name": "Frode Petterson",
+                    "role": "Developer",
                     "email": "frode.petterson@joubel.com",
-                    "homepage": "http://joubel.com",
-                    "role": "Developer"
+                    "homepage": "http://joubel.com"
                 }
             ],
             "description": "H5P Editor functionality in PHP",
@@ -3582,7 +3593,7 @@
                 "interactive",
                 "quiz"
             ],
-            "time": "2019-03-13T12:29:39+00:00"
+            "time": "2019-08-16T08:05:14+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -6955,11 +6966,11 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.5",
+            "version": "8.3.6",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
-                "reference": "35277fc8675b6a2cbb194f8880145a9c85c845c4"
+                "url": "https://git.drupalcode.org/project/coder.git",
+                "reference": "4337ddf58d28dbdee4e1367bf71ee13393ab9820"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -6988,7 +6999,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-06-14T15:06:06+00:00"
+            "time": "2019-08-09T09:27:26+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -7333,16 +7344,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.1",
+            "version": "1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72"
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
-                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/007c053ae6f31bba39dfa19a7726f56e9763bbea",
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
                 "shasum": ""
             },
             "require": {
@@ -7377,7 +7388,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-04-07T13:18:21+00:00"
+            "time": "2019-08-09T12:45:53+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -8302,16 +8313,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937"
+                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/234199f4528de6d12aaa58b612e98f7d36adb937",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/06a9a5947f47b3029d76118eb5c22802e5869687",
+                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687",
                 "shasum": ""
             },
             "require": {
@@ -8339,6 +8350,10 @@
             ],
             "authors": [
                 {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
                     "name": "Jeff Welch",
                     "email": "whatthejeff@gmail.com"
                 },
@@ -8347,16 +8362,12 @@
                     "email": "github@wallbash.com"
                 },
                 {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@2bepublished.at"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                },
-                {
                     "name": "Adam Harvey",
                     "email": "aharvey@php.net"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
@@ -8365,7 +8376,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2017-04-03T13:19:02+00:00"
+            "time": "2019-08-11T12:43:14+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -8907,6 +8918,7 @@
     "stability-flags": {
         "drupal/h5p": 5,
         "drupal/h5p_google_analytics": 20,
+        "drupal/h5p_math_input": 20,
         "drupal/openid_connect": 10,
         "drupal/openid_connect_harid": 20
     },
