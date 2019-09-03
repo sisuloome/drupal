@@ -27,11 +27,21 @@
   drush en bootstrap_site_alert
   drush en h5p_math_input
   drush en h5p_x_frame_options
+  drush en mailsystem
+  drush en mimemail
+  drush en h5p_challenge
   drush then bootstrap
   drush config-set system.theme default bootstrap
   drush cr
   ```
 * Configure the system as needed
+  * Please note that `h5p_challenge` would require `mailsystem` and `mimemail`
+  modules to be configure in order to send results as an attachment to an email
+  notification when challenge ends. Please see
+  [this](https://git.drupalcode.org/project/h5p_challenge#installation) resource
+  for detailed guide and explanations
+  * Please consider configuring the Cron jobs according to
+  [this](https://www.drupal.org/node/23714) page. Hourly job should be enough
 
 ## Updating
 
