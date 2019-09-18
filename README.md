@@ -22,8 +22,8 @@
   ```
   drush en h5peditor
   drush en openid_connect_harid
-  drush en google_analytics
-  drush en h5p_google_analytics
+  drush en google_tag
+  drush en h5p_google_tag
   drush en bootstrap_site_alert
   drush en h5p_math_input
   drush en h5p_x_frame_options

@@ -30,11 +30,11 @@
         {
             "type" : "package",
             "package": {
-                "name" : "drupal/h5p_google_analytics",
+                "name" : "drupal/h5p_google_tag",
                 "version": "dev-master",
                 "type": "drupal-module-custom",
                 "source": {
-                    "url" : "https://github.com/sisuloome/h5p_google_analytics.git",
+                    "url" : "https://github.com/sisuloome/h5p_google_tag.git",
                     "type": "git",
                     "reference" : "master"
                 }
@@ -76,10 +76,10 @@
         "drupal/bootstrap_site_alert": "^1.7",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
-        "drupal/google_analytics": "^3.0",
+        "drupal/google_tag": "^1.2",
         "drupal/h5p": "^1.0@RC",
         "drupal/h5p_challenge": "^1.0@RC",
-        "drupal/h5p_google_analytics": "dev-master",
+        "drupal/h5p_google_tag": "dev-master",
         "drupal/h5p_math_input": "dev-master",
         "drupal/h5p_x_frame_options": "dev-master",
         "drupal/mailsystem": "^4.1",
@@ -145,7 +145,8 @@
         },
         "patches": {
             "drupal/h5p": {
-                "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff"
+                "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff",
+                "Allow HTML to be added to Embed view": "https://github.com/pjotrsavitski/h5p/commit/2009dfdb2f545ea9108c1e75b57bd0d4435158ac.diff"
             }
         }
     }

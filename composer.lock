@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05485f705b5214a04bd0ca083c7134c6",
+    "content-hash": "9f2ac0ac881144679d919e5df64ff2bb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2711,34 +2711,30 @@
             "time": "2019-09-04T10:26:35+00:00"
         },
         {
-            "name": "drupal/google_analytics",
-            "version": "3.0.0",
+            "name": "drupal/google_tag",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/google_analytics.git",
-                "reference": "8.x-3.0"
+                "url": "https://git.drupalcode.org/project/google_tag.git",
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "18179854152cae44be2a5ed5de5550bc6e131c70"
+                "url": "https://ftp.drupal.org/files/projects/google_tag-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "7ea79c9bab4ac7692c998c35452c82a36b2827bd"
             },
             "require": {
-                "drupal/core": "~8.5"
-            },
-            "require-dev": {
-                "drupal/php": "*",
-                "drupal/token": "*"
+                "drupal/core": "~8.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1548968580",
+                    "version": "8.x-1.2",
+                    "datestamp": "1567174084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2747,23 +2743,18 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL 2.0"
             ],
             "authors": [
                 {
-                    "name": "hass",
-                    "homepage": "https://www.drupal.org/u/hass"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/49388/committers"
+                    "name": "solotandem",
+                    "homepage": "https://www.drupal.org/user/240748"
                 }
             ],
-            "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
-            "homepage": "https://www.drupal.org/project/google_analytics",
+            "description": "Allows your website analytics to be managed using Google Tag Manager.",
+            "homepage": "https://www.drupal.org/project/google_tag",
             "support": {
-                "source": "https://git.drupal.org/project/google_analytics.git",
-                "issues": "https://www.drupal.org/project/issues/google_analytics"
+                "source": "https://git.drupalcode.org/project/google_tag"
             }
         },
         {
@@ -2799,7 +2790,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff"
+                    "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff",
+                    "Allow HTML to be added to Embed view": "https://github.com/pjotrsavitski/h5p/commit/2009dfdb2f545ea9108c1e75b57bd0d4435158ac.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2889,15 +2881,15 @@
             }
         },
         {
-            "name": "drupal/h5p_google_analytics",
+            "name": "drupal/h5p_google_tag",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sisuloome/h5p_google_analytics.git",
+                "url": "https://github.com/sisuloome/h5p_google_tag.git",
                 "reference": "master"
             },
             "type": "drupal-module-custom",
-            "time": "2019-08-28T17:50:59+00:00"
+            "time": "2019-09-18T12:16:09+00:00"
         },
         {
             "name": "drupal/h5p_math_input",
@@ -9121,7 +9113,7 @@
     "stability-flags": {
         "drupal/h5p": 5,
         "drupal/h5p_challenge": 5,
-        "drupal/h5p_google_analytics": 20,
+        "drupal/h5p_google_tag": 20,
         "drupal/h5p_math_input": 20,
         "drupal/h5p_x_frame_options": 20,
         "drupal/mimemail": 15,
