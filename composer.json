@@ -86,6 +86,7 @@
         "drupal/mimemail": "^1.0@alpha",
         "drupal/openid_connect": "^1.0@beta",
         "drupal/openid_connect_harid": "dev-master",
+        "drupal/override_node_options": "^2.4",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
