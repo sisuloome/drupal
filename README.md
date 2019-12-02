@@ -31,6 +31,7 @@
   drush en mimemail
   drush en h5p_challenge
   drush en override_node_options
+  drush en h5p_analytics
   drush then bootstrap
   drush config-set system.theme default bootstrap
   drush cr
@@ -43,6 +44,8 @@
   for detailed guide and explanations
   * Please consider configuring the Cron jobs according to
   [this](https://www.drupal.org/node/23714) page. Hourly job should be enough
+  * H5P Analytics module would need an LRS to be present and configured. It also
+  required Cron job to be present in order to send data to the xAPI endpoint.
 
 ## Updating
 

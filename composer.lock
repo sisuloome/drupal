@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "644f5a1f039b94f34028715ad15729e7",
+    "content-hash": "5c6d7c7a88a730624b93733a285eaadb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2842,6 +2842,53 @@
             }
         },
         {
+            "name": "drupal/h5p_analytics",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/h5p_analytics.git",
+                "reference": "b6a3026a4344bfa9e3fb5ab5a5d06e561e7db4dd"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/h5p": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1551739681",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "pjotr.savitski",
+                    "homepage": "https://www.drupal.org/user/3594177"
+                }
+            ],
+            "description": "H5P xAPI LRS integration",
+            "homepage": "https://www.drupal.org/project/h5p_analytics",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/h5p_analytics",
+                "issues": "https://www.drupal.org/project/issues/h5p_analytics"
+            },
+            "time": "2019-08-28T17:56:31+00:00"
+        },
+        {
             "name": "drupal/h5p_challenge",
             "version": "1.0.0-rc3",
             "source": {
@@ -2904,7 +2951,7 @@
                 "reference": "master"
             },
             "type": "drupal-module-custom",
-            "time": "2019-09-18T12:38:43+00:00"
+            "time": "2019-11-13T11:17:37+00:00"
         },
         {
             "name": "drupal/h5p_math_input",
@@ -2915,7 +2962,7 @@
                 "reference": "master"
             },
             "type": "drupal-module-custom",
-            "time": "2019-08-21T10:37:36+00:00"
+            "time": "2019-08-28T18:00:23+00:00"
         },
         {
             "name": "drupal/h5p_x_frame_options",
@@ -3135,7 +3182,7 @@
                 "reference": "master"
             },
             "type": "drupal-module-custom",
-            "time": "2019-04-09T08:56:31+00:00"
+            "time": "2019-08-28T17:59:19+00:00"
         },
         {
             "name": "drupal/override_node_options",
@@ -9135,6 +9182,17 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.7.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webflo/drupal-core-require-dev.git",
+                "reference": "712de55c6f8220cd1cabb6cf88df1e40595b187e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/712de55c6f8220cd1cabb6cf88df1e40595b187e",
+                "reference": "712de55c6f8220cd1cabb6cf88df1e40595b187e",
+                "shasum": ""
+            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
@@ -9164,6 +9222,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/h5p": 5,
+        "drupal/h5p_analytics": 20,
         "drupal/h5p_challenge": 5,
         "drupal/h5p_google_tag": 20,
         "drupal/h5p_math_input": 20,
