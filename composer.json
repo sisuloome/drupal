@@ -75,6 +75,7 @@
         "drupal/bootstrap": "^3.17",
         "drupal/bootstrap_site_alert": "^1.7",
         "drupal/console": "^1.0.2",
+        "drupal/core-recommended": "^8.8",
         "drupal/google_tag": "^1.2",
         "drupal/h5p": "^1.0@RC",
         "drupal/h5p_analytics": "1.x-dev",
