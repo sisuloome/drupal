@@ -1,0 +1,5 @@
+sisuloome.statistics_controller_index:
+  title: 'Sisuloome statistics'
+  route_name: sisuloome.statistics_controller_index
+  description: 'Simple statistics for Sisuloome'
+  parent: system.admin_reports

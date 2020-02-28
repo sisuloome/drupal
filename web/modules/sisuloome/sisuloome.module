@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains sisuloome.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sisuloome_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sisuloome module.
+    case 'help.page.sisuloome':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Sisuloome main module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

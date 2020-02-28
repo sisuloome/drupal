@@ -1,0 +1,7 @@
+name: 'Sisuloome'
+type: module
+description: 'Sisuloome main module'
+core: 8.x
+package: 'Sisuloome'
+dependencies:
+  - drupal:node
