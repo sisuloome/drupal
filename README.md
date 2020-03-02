@@ -32,6 +32,7 @@
   drush en h5p_challenge
   drush en override_node_options
   drush en h5p_analytics
+  drush en sisuloome
   drush then bootstrap
   drush config-set system.theme default bootstrap
   drush cr

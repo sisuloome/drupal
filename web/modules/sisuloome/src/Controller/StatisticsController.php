@@ -53,11 +53,15 @@ class StatisticsController extends ControllerBase {
   /**
    * Returns node types with count of nodes created.
    *
+   * @param  integer $status
+   *   Node status value
    * @return array
    *   Node types with key as type and count as value
    */
-  private function getNodeTypeCounts() : array {
+  private function getNodeTypeCounts(int $status = 1) : array {
     $query = $this->database->select('node', 'n');
+    $query->innerJoin('node_field_data', 'nfd', 'n.vid = nfd.vid');
+    $query->condition('nfd.status', $status, '=');
     $query->addField('n', 'type');
     $query->addExpression('COUNT(*)', 'count');
     $query->groupBy('n.type');
@@ -82,7 +86,8 @@ class StatisticsController extends ControllerBase {
     ];
 
     $node_types = node_type_get_names();
-    $node_type_count = $this->getNodeTypeCounts();
+    $node_type_public_count = $this->getNodeTypeCounts(1);
+    $node_type_private_count = $this->getNodeTypeCounts(0);
 
     $response['nodes']['header'] = [
       '#type' => 'markup',
@@ -97,7 +102,11 @@ class StatisticsController extends ControllerBase {
         $this
           ->t('Name'),
         $this
-          ->t('Count'),
+          ->t('Published'),
+        $this
+          ->t('Unpublished'),
+        $this
+          ->t('Total'),
       ],
     ];
 
@@ -106,8 +115,14 @@ class StatisticsController extends ControllerBase {
         $response['nodes']['table'][$key]['name'] = [
           '#plain_text' => $name,
         ];
-        $response['nodes']['table'][$key]['count'] = [
-          '#plain_text' => $node_type_count[$key] ?? 0,
+        $response['nodes']['table'][$key]['public'] = [
+          '#plain_text' => $node_type_public_count[$key] ?? 0,
+        ];
+        $response['nodes']['table'][$key]['private'] = [
+          '#plain_text' => $node_type_private_count[$key] ?? 0,
+        ];
+        $response['nodes']['table'][$key]['total'] = [
+          '#plain_text' => ($node_type_public_count[$key] ?? 0) + ($node_type_private_count[$key] ?? 0),
         ];
       }
 
@@ -116,10 +131,10 @@ class StatisticsController extends ControllerBase {
         '#suffix' => '</strong>',
         '#plain_text' => $this
           ->t('Total: :count', [
-            ':count' => array_sum(array_values($node_type_count)),
+            ':count' => array_sum(array_values($node_type_public_count)) + array_sum(array_values($node_type_private_count)),
           ]),
         '#wrapper_attributes' => [
-          'colspan' => 2,
+          'colspan' => 4,
         ]
       ];
     }
