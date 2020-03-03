@@ -149,6 +149,9 @@
             "drupal/h5p": {
                 "Add missing hooks to Embed view": "https://github.com/pjotrsavitski/h5p/commit/1ec79a6d9904d58249d0bbfe06ab1ea366993569.diff",
                 "Allow HTML to be added to Embed view": "https://github.com/pjotrsavitski/h5p/commit/2009dfdb2f545ea9108c1e75b57bd0d4435158ac.diff"
+            },
+            "drupal/openid_connect": {
+                "OpenID Connect fix name alter condition": "https://www.drupal.org/files/issues/2020-03-03/3117414-13488246.patch"
             }
         }
     }
