@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4860b7f7eb2ff9f9c9415e266e3e173",
+    "content-hash": "9a1bf714f6fcaaaa42142649ae246f86",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2181,16 +2181,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.8.2",
+            "version": "8.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "f997857003276c2ae6d27db30f0eab9c7dd10e62"
+                "reference": "77971de6d6ade7366cdd3fadfc16c5d02e531446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/f997857003276c2ae6d27db30f0eab9c7dd10e62",
-                "reference": "f997857003276c2ae6d27db30f0eab9c7dd10e62",
+                "url": "https://api.github.com/repos/drupal/core/zipball/77971de6d6ade7366cdd3fadfc16c5d02e531446",
+                "reference": "77971de6d6ade7366cdd3fadfc16c5d02e531446",
                 "shasum": ""
             },
             "require": {
@@ -2407,20 +2407,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-02-01T19:51:15+00:00"
+            "time": "2020-03-04T18:01:37+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.8.2",
+            "version": "8.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3"
+                "reference": "c43bf9881a299de9189440e0772579775b1f93f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3",
-                "reference": "67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c43bf9881a299de9189440e0772579775b1f93f1",
+                "reference": "c43bf9881a299de9189440e0772579775b1f93f1",
                 "shasum": ""
             },
             "require": {
@@ -2433,7 +2433,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.8.2",
+                "drupal/core": "8.8.3",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.11",
                 "guzzlehttp/guzzle": "6.3.3",
@@ -2487,7 +2487,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2020-02-01T19:51:15+00:00"
+            "time": "2020-03-04T18:01:37+00:00"
         },
         {
             "name": "drupal/google_tag",
@@ -2611,7 +2611,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p_analytics.git",
-                "reference": "b6a3026a4344bfa9e3fb5ab5a5d06e561e7db4dd"
+                "reference": "332ec76f3b95cf814d60c72864dada132ecda54c"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2624,7 +2624,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1551739681",
+                    "datestamp": "1567015086",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2650,7 +2650,7 @@
                 "source": "http://cgit.drupalcode.org/h5p_analytics",
                 "issues": "https://www.drupal.org/project/issues/h5p_analytics"
             },
-            "time": "2019-08-28T17:56:31+00:00"
+            "time": "2020-03-04T10:32:15+00:00"
         },
         {
             "name": "drupal/h5p_challenge",
@@ -2895,6 +2895,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "OpenID Connect fix name alter condition": "https://www.drupal.org/files/issues/2020-03-03/3117414-13488246.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7424,7 +7427,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "8.8.2",
+            "version": "8.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
