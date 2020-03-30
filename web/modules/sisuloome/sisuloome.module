@@ -22,3 +22,32 @@ function sisuloome_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_h5p_semantics_alter().
+ */
+function sisuloome_h5p_semantics_alter(&$semantics, $name, $version) {
+  $iterator = new \RecursiveIteratorIterator(new \RecursiveArrayIterator($semantics, \RecursiveIteratorIterator::SELF_FIRST));
+
+  foreach($iterator as $key => $value) {
+    if ($key === 'type' && $value === 'text') {
+      $tmp = $iterator->getInnerIterator()->getArrayCopy();
+
+      if (isset($tmp['tags']) && is_array($tmp['tags'])) {
+        $tags = $iterator->offsetGet('tags');
+        $tags_added = FALSE;
+
+        foreach(['sub', 'sup'] as $tag) {
+          if (!in_array($tag, $tags)) {
+            array_push($tags, $tag);
+            $tags_added = TRUE;
+          }
+        }
+
+        if ($tags_added) {
+          $iterator->getInnerIterator()->offsetSet('tags', $tags);
+        }
+      }
+    }
+  }
+}
