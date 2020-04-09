@@ -2768,17 +2768,17 @@
         },
         {
             "name": "drupal/h5p_challenge",
-            "version": "1.0.0-rc12",
+            "version": "1.0.0-rc13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p_challenge.git",
-                "reference": "8.x-1.0-rc12"
+                "reference": "8.x-1.0-rc13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/h5p_challenge-8.x-1.0-rc12.zip",
-                "reference": "8.x-1.0-rc12",
-                "shasum": "2b0b39cc74f4476b2a1f80262da72f0944631a1e"
+                "url": "https://ftp.drupal.org/files/projects/h5p_challenge-8.x-1.0-rc13.zip",
+                "reference": "8.x-1.0-rc13",
+                "shasum": "f53e94f567240c311e768f7ab7ce21b8f50a96b8"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2787,8 +2787,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc12",
-                    "datestamp": "1586355428",
+                    "version": "8.x-1.0-rc13",
+                    "datestamp": "1586436377",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
