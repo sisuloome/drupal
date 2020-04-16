@@ -51,3 +51,22 @@ function sisuloome_h5p_semantics_alter(&$semantics, $name, $version) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function sisuloome_form_user_form_alter(&$form, &$form_state) {
+  if (\Drupal::moduleHandler()->moduleExists('openid_connect')) {
+    $account = \Drupal::currentUser();
+    $access = openid_connect_set_password_access($account);
+
+    if (!$access) {
+      $constraints = $form_state->getStorage()['user']->getFieldDefinition('mail')->getConstraints();
+
+      if (array_key_exists('ProtectedUserField', $constraints)) {
+        unset($constraints['ProtectedUserField']);
+        $form_state->getStorage()['user']->getFieldDefinition('mail')->setConstraints($constraints);
+      }
+    }
+  }
+}
