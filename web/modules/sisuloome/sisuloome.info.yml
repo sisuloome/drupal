@@ -5,3 +5,4 @@ core: 8.x
 package: 'Sisuloome'
 dependencies:
   - drupal:node
+  - drupal:h5p

@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains sisuloome.install.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function sisuloome_install() {
+  \Drupal::database()
+    ->update('h5p_content')
+    ->fields([
+      'license' => 'CC BY-SA',
+      'license_version' => '3.0',
+    ])
+    ->execute();
+}
+
+/**
+ * Updated all h5p_content entities and sets license and license version values
+ * to CC BY-SA 3.0.
+ */
+function sisuloome_update_8001() {
+  \Drupal::database()
+    ->update('h5p_content')
+    ->fields([
+      'license' => 'CC BY-SA',
+      'license_version' => '3.0',
+    ])
+    ->execute();
+}

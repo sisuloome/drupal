@@ -70,3 +70,56 @@ function sisuloome_form_user_form_alter(&$form, &$form_state) {
     }
   }
 }
+
+/**
+ * Implements  hook_field_widget_WIDGET_TYPE_form_alter().
+ *
+ * Only allows CC BY-SA 3.0 license.
+ */
+function sisuloome_field_widget_h5p_editor_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  if (isset($element['h5p_content']['editor']['#attached']['drupalSettings']['h5peditor'])) {
+    if (isset($element['h5p_content']['editor']['#attached']['drupalSettings']['h5peditor']['metadataSemantics'])) {
+      foreach($element['h5p_content']['editor']['#attached']['drupalSettings']['h5peditor']['metadataSemantics'] as $field) {
+        if ($field->name === 'license' && $field->type === 'select') {
+          $field->default = 'CC BY-SA';
+
+          foreach($field->options as $key => $option) {
+            if (isset($option->type) && $option->type === 'optgroup') {
+              foreach($option->options as $og_key => $og_option) {
+                if ($og_option->value !== 'CC BY-SA') {
+                  unset($option->options[$og_key]);
+                } else {
+                  if (isset($og_option->versions)) {
+                    foreach ($og_option->versions as $v_key => $version) {
+                      if ($version->value !== '3.0'){
+                        unset($og_option->versions[$v_key]);
+                      }
+                    }
+
+                    $og_option->versions = array_values($og_option->versions);
+                  }
+                }
+              }
+
+              $option->options = array_values($option->options);
+            } else if (isset($option->value) && $option->value !== 'CC BY-SA') {
+              unset($field->options[$key]);
+            }
+          }
+
+          $field->options = array_values($field->options);
+        }
+
+        if ($field->name === 'licenseVersion' && $field->type === 'select') {
+          foreach ($field->options as $key => $option) {
+            if ($option->value !== '3.0') {
+              unset($field->options[$key]);
+            }
+          }
+
+          $field->options = array_values($field->options);
+        }
+      }
+    }
+  }
+}
