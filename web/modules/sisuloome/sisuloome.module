@@ -122,4 +122,16 @@ function sisuloome_field_widget_h5p_editor_form_alter(&$element, \Drupal\Core\Fo
       }
     }
   }
+
+  $element['sisuloome_license_information'] = [
+    '#type' => 'container',
+    '#attributes' => [
+      'class' => ['sisuloome-license-infromation',],
+    ],
+  ];
+  $element['sisuloome_license_information']['text'] = [
+    '#prefix' => '<strong>',
+    '#suffix' => '</strong>',
+    '#plain_text' => t('By publishing materials, author agrees on Creative Commons licence CC BY-SA 3.0. This licence applies to all published learning resources in Sisuloome and e-Koolikott. In case user is not going to agree on those terms, publishing materials is prohibited.'),
+  ];
 }
