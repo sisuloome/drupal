@@ -76,7 +76,7 @@ function sisuloome_form_user_form_alter(&$form, &$form_state) {
  *
  * Only allows CC BY-SA 3.0 license.
  */
-function sisuloome_field_widget_h5p_editor_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+/*function sisuloome_field_widget_h5p_editor_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
   if (isset($element['h5p_content']['editor']['#attached']['drupalSettings']['h5peditor'])) {
     if (isset($element['h5p_content']['editor']['#attached']['drupalSettings']['h5peditor']['metadataSemantics'])) {
       foreach($element['h5p_content']['editor']['#attached']['drupalSettings']['h5peditor']['metadataSemantics'] as $field) {
@@ -134,4 +134,4 @@ function sisuloome_field_widget_h5p_editor_form_alter(&$element, \Drupal\Core\Fo
     '#suffix' => '</strong>',
     '#plain_text' => t('By publishing materials, author agrees on Creative Commons licence CC BY-SA 3.0. This licence applies to all published learning resources in Sisuloome and e-Koolikott. In case user is not going to agree on those terms, publishing materials is prohibited.'),
   ];
-}
+}*/

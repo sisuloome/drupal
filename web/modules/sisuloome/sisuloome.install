@@ -9,13 +9,13 @@
  * Implements hook_install().
  */
 function sisuloome_install() {
-  \Drupal::database()
+  /*\Drupal::database()
     ->update('h5p_content')
     ->fields([
       'license' => 'CC BY-SA',
       'license_version' => '3.0',
     ])
-    ->execute();
+    ->execute();*/
 }
 
 /**
@@ -23,11 +23,11 @@ function sisuloome_install() {
  * to CC BY-SA 3.0.
  */
 function sisuloome_update_8001() {
-  \Drupal::database()
+  /*\Drupal::database()
     ->update('h5p_content')
     ->fields([
       'license' => 'CC BY-SA',
       'license_version' => '3.0',
     ])
-    ->execute();
+    ->execute();*/
 }
