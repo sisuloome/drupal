@@ -78,7 +78,7 @@
         "drupal/core-recommended": "^8.9",
         "drupal/google_tag": "^1.2",
         "drupal/h5p": "^1.0@RC",
-        "drupal/h5p_analytics": "1.x-dev",
+        "drupal/h5p_analytics": "^1.0@RC",
         "drupal/h5p_challenge": "^1.0@RC",
         "drupal/h5p_google_tag": "dev-master",
         "drupal/h5p_math_input": "dev-master",

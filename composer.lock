@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9966feb0edbcfc40d3dd23ad6034a537",
+    "content-hash": "420a1c6716b8548c168e5505804a4ddb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1882,29 +1882,26 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.21.0",
+            "version": "3.22.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.21"
+                "reference": "8.x-3.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.21.zip",
-                "reference": "8.x-3.21",
-                "shasum": "e431093eb4f64712b02e691660a85cfa4fb49c88"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.22.zip",
+                "reference": "8.x-3.22",
+                "shasum": "03cc41f810c30b73f74d4c8f31db460f7d0fadba"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-3.21",
-                    "datestamp": "1574427108",
+                    "version": "8.x-3.22",
+                    "datestamp": "1591319896",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1913,7 +1910,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1935,7 +1932,7 @@
             "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
             "homepage": "https://www.drupal.org/project/bootstrap",
             "support": {
-                "source": "http://cgit.drupalcode.org/bootstrap",
+                "source": "https://git.drupalcode.org/project/bootstrap",
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
@@ -2608,29 +2605,26 @@
         },
         {
             "name": "drupal/google_tag",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/google_tag.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_tag-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "2619d19c9a6b1d8f7a2d0c2715d009cf3b11d697"
+                "url": "https://ftp.drupal.org/files/projects/google_tag-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "1bdc6f93d1c79c27738320597f2185f5de37432f"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1575649087",
+                    "version": "8.x-1.4",
+                    "datestamp": "1591383264",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2639,7 +2633,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL 2.0"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2724,24 +2718,27 @@
         },
         {
             "name": "drupal/h5p_analytics",
-            "version": "dev-1.x",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p_analytics.git",
-                "reference": "332ec76f3b95cf814d60c72864dada132ecda54c"
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/h5p_analytics-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "9b7f4eb22461327838b20913c0d84f3ba68a8c96"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "drupal/h5p": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1567015086",
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1591960680",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2766,32 +2763,31 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/h5p_analytics",
                 "issues": "https://www.drupal.org/project/issues/h5p_analytics"
-            },
-            "time": "2020-03-04T10:32:15+00:00"
+            }
         },
         {
             "name": "drupal/h5p_challenge",
-            "version": "1.0.0-rc13",
+            "version": "1.0.0-rc14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p_challenge.git",
-                "reference": "8.x-1.0-rc13"
+                "reference": "8.x-1.0-rc14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/h5p_challenge-8.x-1.0-rc13.zip",
-                "reference": "8.x-1.0-rc13",
-                "shasum": "f53e94f567240c311e768f7ab7ce21b8f50a96b8"
+                "url": "https://ftp.drupal.org/files/projects/h5p_challenge-8.x-1.0-rc14.zip",
+                "reference": "8.x-1.0-rc14",
+                "shasum": "d2be71a973aa24c4ac4f03ff7c8b5d286c97f5cc"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "drupal/h5p": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc13",
-                    "datestamp": "1586436377",
+                    "version": "8.x-1.0-rc14",
+                    "datestamp": "1591960537",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2919,30 +2915,27 @@
         },
         {
             "name": "drupal/mimemail",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/mimemail.git",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mimemail-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "0467a4088d695f17d497f38a23117323324ef06e"
+                "url": "https://ftp.drupal.org/files/projects/mimemail-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "5e02422aa7ea56411c10086c56a5033558eccfa4"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "drupal/mailsystem": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1494775086",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1591399267",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3064,29 +3057,26 @@
         },
         {
             "name": "drupal/override_node_options",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/override_node_options.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "0d00dbefc7f9103c863af2607a988bf68681df60"
+                "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "dd4862278f16f04857aa7c5fc69b31ddf85bae62"
             },
             "require": {
-                "drupal/core": "^8.4.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1522490884",
+                    "version": "8.x-2.5",
+                    "datestamp": "1591363789",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3377,12 +3367,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -9978,7 +9968,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/h5p": 5,
-        "drupal/h5p_analytics": 20,
+        "drupal/h5p_analytics": 5,
         "drupal/h5p_challenge": 5,
         "drupal/h5p_google_tag": 20,
         "drupal/h5p_math_input": 20,
