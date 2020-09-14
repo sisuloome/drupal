@@ -154,6 +154,9 @@
             },
             "drupal/openid_connect": {
                 "OpenID Connect fix name alter condition": "https://www.drupal.org/files/issues/2020-03-03/3117414-13488246.patch"
+            },
+            "h5p/h5p-editor": {
+                "Fix whitelist check to be case insensitive": "https://github.com/h5p/h5p-editor-php-library/commit/bd871a3181f3e4a343351ae6a22d773a74d928b7.diff"
             }
         }
     }
