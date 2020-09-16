@@ -58,7 +58,7 @@ function sisuloome_h5p_semantics_alter(&$semantics, $name, $version) {
 function sisuloome_form_user_form_alter(&$form, &$form_state) {
   if (\Drupal::moduleHandler()->moduleExists('openid_connect')) {
     $account = \Drupal::currentUser();
-    $access = openid_connect_set_password_access($account);
+    $access = \Drupal::service('openid_connect.openid_connect')->hasSetPasswordAccess($account);
 
     if (!$access) {
       $constraints = $form_state->getStorage()['user']->getFieldDefinition('mail')->getConstraints();
