@@ -17,19 +17,6 @@
         {
             "type" : "package",
             "package": {
-                "name" : "drupal/openid_connect_harid",
-                "version": "dev-master",
-                "type": "drupal-module-custom",
-                "source": {
-                    "url" : "https://github.com/sisuloome/openid_connect_harid.git",
-                    "type": "git",
-                    "reference" : "master"
-                }
-            }
-        },
-        {
-            "type" : "package",
-            "package": {
                 "name" : "drupal/h5p_google_tag",
                 "version": "dev-master",
                 "type": "drupal-module-custom",
@@ -86,7 +73,7 @@
         "drupal/mailsystem": "^4.1",
         "drupal/mimemail": "^1.0@alpha",
         "drupal/openid_connect": "^1.0@beta",
-        "drupal/openid_connect_harid": "dev-master",
+        "drupal/openid_connect_harid": "^1.0",
         "drupal/override_node_options": "^2.4",
         "drupal/restui": "^1.18",
         "drupal/simple_oauth": "^4.4",

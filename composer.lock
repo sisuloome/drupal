@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23d8a0eda4dbc9175ebe8892f6ed7c6f",
+    "content-hash": "15886756bb881950b321eb1ebc1e07c8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1878,6 +1878,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
+            "abandoned": "drupal/core-composer-scaffold",
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
@@ -3055,14 +3056,55 @@
         },
         {
             "name": "drupal/openid_connect_harid",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sisuloome/openid_connect_harid.git",
-                "reference": "master"
+                "url": "https://git.drupalcode.org/project/openid_connect_harid.git",
+                "reference": "8.x-1.0"
             },
-            "type": "drupal-module-custom",
-            "time": "2020-09-16T14:30:41+00:00"
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/openid_connect_harid-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "49526272b44b22f58ca12967ad5c405b1b5c6552"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/openid_connect": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1602257566",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "pjotr.savitski",
+                    "homepage": "https://www.drupal.org/user/3594177"
+                }
+            ],
+            "description": "OpenID Connect HarID Client",
+            "homepage": "https://github.com/sisuloome/openid_connect_harid",
+            "keywords": [
+                "Client",
+                "Drupal",
+                "HarID",
+                "OpenID Connect"
+            ],
+            "support": {
+                "source": "https://github.com/sisuloome/openid_connect_harid",
+                "issues": "https://github.com/sisuloome/openid_connect_harid/issues"
+            }
         },
         {
             "name": "drupal/override_node_options",
@@ -10234,8 +10276,7 @@
         "drupal/h5p_math_input": 20,
         "drupal/h5p_x_frame_options": 20,
         "drupal/mimemail": 15,
-        "drupal/openid_connect": 10,
-        "drupal/openid_connect_harid": 20
+        "drupal/openid_connect": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
